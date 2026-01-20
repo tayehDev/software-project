@@ -2,8 +2,8 @@
 include "header.php";
 
 if($_SESSION['user_role_account'] != 1) {
-    if(file_exists('../index.php')) echo "<script> window.top.location.href = '../index.php';</script>";
-    else if(file_exists('../../index.php')) echo "<script> window.top.location.href = '../../index.php';</script>";
+    if(file_exists('index.php')) echo "<script> window.top.location.href = 'index.php';</script>";
+    else if(file_exists('../index.php')) echo "<script> window.top.location.href = '../index.php';</script>";
     exit;
 }
 ?>
@@ -57,7 +57,7 @@ $query = mysqli_query($connect, $sql);
 <div class="text-center mb-4">
     <a class="btn" style="background:#c3e88d;color:#fff;font-weight:bold;border:none;padding:10px 20px;border-radius:8px;"
        href="aboutUs_template.php?action=add_row">
-       Add New Announcement
+       Add Info
     </a>
 </div>
 
