@@ -1,0 +1,7 @@
+
+            SELECT p.*, u.fullname, u.business_name
+            FROM `products` p
+            LEFT JOIN `users` u ON p.by_user_id = u.id
+            WHERE p.is_canceled_row = 0 
+            AND p.title LIKE '%%' 
+        

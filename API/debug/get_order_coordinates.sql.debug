@@ -1,0 +1,7 @@
+SELECT seller.latitude as seller_lat, seller.longitude as seller_lng, buyer.latitude as buyer_lat, buyer.longitude as buyer_lng
+            FROM orders_list
+            LEFT JOIN products ON orders_list.product_id = products.id
+            LEFT JOIN users seller ON seller.id=products.by_user_id
+            LEFT JOIN users buyer ON buyer.id=orders_list.by_user_id
+            WHERE orders_list.id = 1
+            LIMIT 1

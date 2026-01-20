@@ -1,0 +1,1 @@
+SELECT `id`, `name` FROM `category` WHERE `del` = 0 ORDER BY `sort` ASC
