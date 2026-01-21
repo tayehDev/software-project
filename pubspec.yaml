@@ -1,0 +1,66 @@
+name: platform_stores
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+ 
+  
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  google_mlkit_text_recognition: ^0.14.0 
+  
+
+  
+  flutter_map: ^4.0.0  # Update to match the current version you’re using
+  latlong2: ^0.8.1
+
+  geolocator: any
+  
+  flutter_lints: ^4.0.0
+  google_maps_flutter: ^2.0.11
+  custom_info_window: ^1.0.1
+  api_cache_manager: ^1.0.2
+  http: ^0.13.6
+  hexcolor: ^3.0.1
+  snippet_coder_utils: ^1.0.12
+  logger: ^2.0.2+1
+  dio:
+  fluttertoast: ^8.0.9
+  intl: ^0.19.0
+  
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  flutter_inappwebview: ^6.1.5  # just work in android and ios not work in windows and linux
+  
+  image_picker: ^1.0.5
+  dob_input_field: ^2.0.0
+  dropdown_button2: ^2.3.9
+  flutter_holo_date_picker: ^2.0.0 
+  flutter_secure_storage: ^9.0.0
+  
+  fl_chart: ^0.70.0
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+
